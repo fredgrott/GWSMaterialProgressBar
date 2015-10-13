@@ -12,17 +12,19 @@ import android.view.MenuItem;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.github.shareme.gwsmaterialprogressbar.library.IndeterminateProgressDrawable;
+
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
-import me.zhanghai.android.materialprogressbar.IndeterminateProgressDrawable;
+
 
 public class AboutActivity extends AppCompatActivity {
 
-    @InjectView(R.id.about_icon)
+    @Bind(R.id.about_icon)
     ProgressBar iconProgress;
-    @InjectView(R.id.about_version)
+    @Bind(R.id.about_version)
     TextView versionText;
-    @InjectView(R.id.about_github)
+    @Bind(R.id.about_github)
     TextView githubText;
 
     @Override
@@ -32,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         setContentView(R.layout.about_activity);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
 
         iconProgress.setIndeterminateDrawable(new IndeterminateProgressDrawable(this));
         String version = getString(R.string.about_version,
