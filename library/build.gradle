@@ -11,7 +11,7 @@ def libVersionName = "1.0.0.0"
 version = libVersionName
 def siteUrl = 'https://github.com/shareme/GWSMaterialProgressBar'
 def gitUrl = 'https://github.com/shareme/GWSMaterialProgressbar.git'
-group = "com.github.shareme.GWSMaterialProgressBar"
+group = "com.github.shareme"
 
 
 android {
