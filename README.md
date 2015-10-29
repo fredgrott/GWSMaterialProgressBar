@@ -18,7 +18,7 @@ Than in the module buildscript:
 
 
 ```groovy
-compile 'com.github.shareme:GWSMaterialProgressBar:1.0.0.0@aar'
+compile 'com.github.shareme:GWSMaterialProgressBar:{latest-release-number}@aar'
 ```
 
 
